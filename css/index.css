@@ -21,3 +21,13 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 600px;
+    padding: 20px 40px;
+    background-color: rebeccapurple;
+
+}
