@@ -28,6 +28,13 @@ body{
     gap: 50px;
     height: 600px;
     padding: 20px 40px;
-    background-color: rebeccapurple;
-
+    border-radius: 5px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.327);
+    border-left: 1px solid rgba(255, 255, 255, 0.327);
+    background-color: rgba(0, 0, 0, 0.122);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.326);
+    color: var(--cor2);
+    backdrop-filter: blur(10px);
 }
+
+.taskCreateArea
