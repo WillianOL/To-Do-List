@@ -204,6 +204,12 @@ body {
     display: block;
 }
 
+.taskConteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .task {
     display: flex;
     align-items: center;
@@ -215,6 +221,7 @@ body {
     background-color: var(--cor2);
     padding: 15px 20px;
     border-radius: 20px;
+    min-width: 300px;
     max-width: 300px;
 }
 
