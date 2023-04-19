@@ -168,12 +168,20 @@ body {
     bottom: -110px;
 }
 
+.erroMensageTask p{
+    margin-bottom: 0px;
+    padding: 10px 0px;
+}
+
 .erroMensageTask p::before{
-    width: 0px;
-    height: 0px;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid var(--cor3);
-    border-radius: 0px;
-    top: 100px;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border: 15px solid transparent;
+    border-top: 15px solid var(--cor3);
+    border-left: 15px solid var(--cor3);
+    border-radius: 5px 0px 0px 0px;
+    transform: rotate(45deg);
+    top: -20px;
+    left: 20px;
 }
