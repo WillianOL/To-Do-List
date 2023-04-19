@@ -45,7 +45,7 @@ body {
 
 .taskCreateArea h1 {
     text-transform: uppercase;
-    font-size: 1.9em;
+    font-size: 2em;
     font-weight: 400;
     margin-bottom: 20px;
     position: relative;
@@ -71,4 +71,21 @@ body {
     border-radius: 20px;
     bottom: 0px;
     left: 0px;
+}
+
+.taskCreateArea p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.taskCreateArea p::before {
+    position: absolute;
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--cor3);
+    left: -15px;
+    top: 8px;
 }
