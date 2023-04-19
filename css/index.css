@@ -144,7 +144,7 @@ body {
 
 .btnAddTask:hover {
     transform: translateY(-2px);
-    background-color: #28662c;
+    background-color: #4b9643;
 }
 
 .taskArea h2 {
