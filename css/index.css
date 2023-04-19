@@ -40,7 +40,12 @@ body {
 
 .taskCreateArea,
 .taskArea {
-    padding: 20px;
+    padding: 20px 10px;
+}
+
+.taskCreateArea {
+    border-right: 1px solid rgba(255, 255, 255, 0.281);
+    padding-right: 40px;
 }
 
 .taskCreateArea h1 {
