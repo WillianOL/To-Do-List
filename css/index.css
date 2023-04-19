@@ -54,5 +54,11 @@ body {
 
 .taskCreateArea h1::before {
     position: absolute;
-    
+    content: " ";
+    width: 20px;
+    height: 10px;
+    background-color: var(--cor3);
+    border-radius: 20px 2px;
+    left: -25px;
+    top: 10px;
 }
