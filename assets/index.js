@@ -5,7 +5,6 @@ const taskDescription = document.querySelector('#taskDescription');
 
 function dataVelidation() {
     const tittleValue = taskTittle.value
-    const descriptionValue = taskDescription.value
     const erroMensage = document.querySelector(".erroMensageTask")
 
     if(tittleValue === ''){
