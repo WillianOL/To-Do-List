@@ -93,3 +93,14 @@ body {
 .taskCreateArea p span{
     color: var(--cor3);
 }
+
+.addTaskArea .taskInputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.taskInputs input{
+    border: none;
+    padding: 15px;
+    outline: none;
+}
