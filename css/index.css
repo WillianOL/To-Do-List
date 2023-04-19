@@ -1,19 +1,19 @@
-:root{
+:root {
     --cor1: #011640;
-    --cor2: #F2F2F2;
-    --cor3: #F24130;
-    --cor4: #8C1F1F;
-    --fontPrincipal: 'Roboto', sans-serif;
+    --cor2: #dcdada;
+    --cor3: #f24130;
+    --cor4: #8c1f1f;
+    --fontPrincipal: "Roboto", sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--fontPrincipal);
 }
 
-body{
+body {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(120deg, var(--cor1), #512866);
@@ -22,10 +22,10 @@ body{
     justify-content: center;
 }
 
-.conteiner{
+.conteiner {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     height: 600px;
     padding: 20px 40px;
     border-radius: 5px 20px;
@@ -37,4 +37,7 @@ body{
     backdrop-filter: blur(10px);
 }
 
-.taskCreateArea
+.taskCreateArea,
+.taskArea {
+    padding: 20px;
+}
