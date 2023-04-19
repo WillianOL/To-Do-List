@@ -146,10 +146,12 @@ body {
     background-color: #28662c;
 }
 
-.taskArea {
-    display: flex;
-    flex-direction: column;
+.taskArea h2 {
+    font-weight: 400;
+    font-size: 1.8em;
 }
 
-.taskArea h2 {
+.taskConteiner{
+    display: flex;
+    justify-content: center;
 }
