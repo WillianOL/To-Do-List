@@ -22,5 +22,6 @@ function addTask(){
     const tittleTask = taskTittle.value
     const descriptionTask = taskDescription.value
 
+    
     console.log(tittleTask, descriptionTask);
 }

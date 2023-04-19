@@ -208,13 +208,37 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
+    color: black;
 }
 
 .task div {
-    background-color: var(--cor4);
+    background-color: var(--cor2);
     padding: 15px 20px;
     border-radius: 20px;
+    max-width: 300px;
+}
+
+.task div h1 {
+    margin-bottom: 10px;
+    border-bottom: solid 1px var(--cor3);
+    font-size: 1.7em;
+    font-weight: 400;
 }
 
 .removeTask {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2em;
+    background-color: var(--cor3);
+    color: var(--cor2);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+.removeTask:hover {
+    transform: translateY(-2px);
+    background-color: rgb(193, 15, 15);
 }
