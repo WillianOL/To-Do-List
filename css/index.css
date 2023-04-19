@@ -97,10 +97,23 @@ body {
 .addTaskArea .taskInputs{
     display: flex;
     flex-direction: column;
+    padding: 5px;
+    background-color: var(--cor2);
+    border-radius: 20px 10px;
 }
 
 .taskInputs input{
     border: none;
     padding: 15px;
     outline: none;
+}
+
+.taskInputs input:nth-child(1){
+    border-radius: 15px 5px 0px 0px;
+    font-size: 1.1em;
+    border-bottom: 1px solid var(--cor3);
+}
+
+.taskInputs input:nth-child(2){
+    border-radius: 0px 0px 15px 5px;
 }
