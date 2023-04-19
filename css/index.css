@@ -35,9 +35,24 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.326);
     color: var(--cor2);
     backdrop-filter: blur(10px);
+    
 }
 
 .taskCreateArea,
 .taskArea {
     padding: 20px;
+}
+
+.taskCreateArea h1 {
+    text-transform: uppercase;
+    font-size: 1.9em;
+    font-weight: 400;
+    color: var(--cor3);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.taskCreateArea h1::before {
+    position: absolute;
+    
 }
