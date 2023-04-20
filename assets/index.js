@@ -7,17 +7,20 @@ const conteinerTasks = document.querySelector('.taskConteiner')
 function dataVelidation() {
     const tittleValue = taskTittle.value
     const erroMensageValue = document.querySelector(".containsTask")
-    const erroMensageContais = document.querySelector(".jaTemTask");
+    const erroMensageContains = document.querySelector(".jaTemTask");
+
+    const removeClassValue = erroMensageValue.classList.remove("showMensage")
+    const removeClassContains = erroMensageContains.classList.remove("showMensage");
 
     if(tittleValue === ''){
-        erroMensageContais.classList.remove('showMensage')
-        erroMensageValue.classList.add('showMensage')        
+        removeClassContains
+        erroMensageValue.classList.add('showMensage')
     } else if(listTasks.includes(tittleValue)){
-        erroMensageValue.classList.remove('showMensage')
-        erroMensageContais.classList.add("showMensage")
+        removeClassValue
+        erroMensageContains.classList.add("showMensage")
     } else {
-        erroMensageValue.classList.remove('showMensage')
-        erroMensageContais.classList.remove("showMensage")
+        removeClassValue
+        removeClassContains
         addTask();
     }
 }
