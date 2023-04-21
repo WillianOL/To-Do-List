@@ -33,7 +33,6 @@ function addTask(){
     const tittleTask = taskTittle.value
     const descriptionTask = taskDescription.value
     listTasks.push(tittleTask)
-    console.log(tittleTask);
 
     conteinerTasks.innerHTML += `
     <div class="task">
@@ -43,6 +42,13 @@ function addTask(){
         </div>
         <button class="removeTask" title="Remover tarefa">-</button>
     </div>`;
-
-
 }
+
+function removerTask() {
+    console.log("Funcionou");
+}
+
+const btnRemoveTask = document.querySelectorAll(".removeTask");
+btnRemoveTask.forEach((item) => {
+    item.addEventListener("click", removerTask)
+})
