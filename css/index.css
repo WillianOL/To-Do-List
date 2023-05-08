@@ -1,8 +1,8 @@
 :root {
     --cor1: #011640;
     --cor2: #dcdada;
-    --cor3: #f24130;
-    --cor4: #8c1f1f;
+    --cor3: #0e7cdc;
+    --cor4: #2f09a3;
     --fontPrincipal: "Poppins", sans-serif;
 }
 
@@ -13,77 +13,60 @@
     font-family: var(--fontPrincipal);
 }
 
-body {
-    height: 100vh;
+body{
     width: 100vw;
-    background: linear-gradient(120deg, var(--cor1), #512866);
+    height: 100vh;
+    background: linear-gradient(to top, #011640, #0c60a9);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.conteiner {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    height: 600px;
-    padding: 20px 40px;
-    border-radius: 5px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.327);
-    border-left: 1px solid rgba(255, 255, 255, 0.327);
-    background-color: rgba(0, 0, 0, 0.23);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.326);
+.conteiner{
+    background-color: #1a1919;
+    min-width: 500px;
+    padding: 40px;
     color: var(--cor2);
-    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.449);
 }
 
-.taskCreateArea,
-.taskArea {
-    padding: 20px 10px;
+.taskCreateArea{
+    margin-bottom: 40px;
 }
 
-.taskCreateArea {
-    border-right: 1px solid rgba(255, 255, 255, 0.281);
-    padding-right: 40px;
-}
-
-.taskCreateArea h1 {
+.taskCreateArea h1{
+    font-size: 1.7em;
+    margin-bottom: 10px;
     text-transform: uppercase;
-    font-size: 2em;
-    font-weight: 400;
-    margin-bottom: 20px;
     position: relative;
 }
 
-.taskCreateArea h1::before {
+.taskCreateArea h1::before{
     position: absolute;
-    content: " ";
+    background-color: var(--cor3);
     width: 20px;
-    height: 10px;
-    background-color: var(--cor3);
-    border-radius: 20px 2px;
-    left: -25px;
-    top: 18px;
-}
-
-.taskCreateArea h1::after {
-    position: absolute;
+    height: 8px;
     content: " ";
-    width: 90px;
-    height: 3px;
-    background-color: var(--cor3);
-    border-radius: 20px;
-    bottom: 0px;
-    left: 0px;
+    border-radius: 2px 10px;
+    left: -25px;
+    top: 15px;
 }
 
-.taskCreateArea p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
+.taskCreateArea h1 span {
+    color: var(--cor3);
+}
+
+.taskCreateArea p{
     position: relative;
+    margin-bottom: 20px;
 }
 
-.taskCreateArea p::before {
+.taskCreateArea p span{
+    color: var(--cor3);
+}
+
+.taskCreateArea p::before{
     position: absolute;
     content: " ";
     width: 10px;
@@ -91,161 +74,5 @@ body {
     border-radius: 50%;
     background-color: var(--cor3);
     left: -15px;
-    top: 8px;
-}
-
-.taskCreateArea p span {
-    color: var(--cor3);
-}
-
-.addTaskArea {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    position: relative;
-}
-
-.addTaskArea .taskInputs {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    background-color: var(--cor2);
-    border-radius: 20px 10px;
-    min-width: 300px;
-}
-
-.taskInputs input {
-    border: none;
-    padding: 15px;
-    outline: none;
-}
-
-.taskInputs input:nth-child(1) {
-    border-radius: 15px 5px 0px 0px;
-    font-size: 1.1em;
-    border-bottom: 1px solid var(--cor3);
-}
-
-.taskInputs input:nth-child(2) {
-    border-radius: 0px 0px 15px 5px;
-}
-
-.btnAddTask {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    font-size: 1.2em;
-    background-color: var(--cor3);
-    color: white;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.btnAddTask:hover {
-    transform: translateY(-2px);
-    background-color: #4b9643;
-}
-
-.taskArea h2 {
-    font-weight: 400;
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
-.taskConteiner {
-    display: flex;
-    justify-content: center;
-}
-
-.erroMensage {
-    position: absolute;
-    background-color: var(--cor3);
-    padding: 10px;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 2px 2px 0px 2px rgba(255, 255, 255, 0.234);
-    bottom: -110px;
-    animation: mensageErroShow 0.3s ease;
-    display: none;
-}
-
-.erroMensage p {
-    margin-bottom: 0px;
-    padding: 10px 0px;
-}
-
-.erroMensage p::before {
-    width: 0;
-    height: 0;
-    background-color: transparent;
-    border: 15px solid transparent;
-    border-top: 15px solid var(--cor3);
-    border-left: 15px solid var(--cor3);
-    border-radius: 5px 0px 0px 0px;
-    transform: rotate(45deg);
-    top: -20px;
-    left: 20px;
-}
-
-@keyframes mensageErroShow {
-    from {
-        opacity: 0;
-        transform: scale(0.7);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.showMensage {
-    display: block;
-}
-
-.taskConteiner {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.task {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    color: black;
-}
-
-.task div {
-    background-color: var(--cor2);
-    padding: 15px 20px;
-    border-radius: 20px;
-    min-width: 300px;
-    max-width: 300px;
-}
-
-.task div h1 {
-    margin-bottom: 10px;
-    border-bottom: solid 1px var(--cor3);
-    font-size: 1.7em;
-    font-weight: 400;
-}
-
-.removeTask {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    font-size: 1.2em;
-    background-color: var(--cor3);
-    color: var(--cor2);
-    cursor: pointer;
-    transition: all .3s ease;
-}
-
-
-.removeTask:hover {
-    transform: translateY(-2px);
-    background-color: rgb(193, 15, 15);
+    top: 6.5px;
 }
