@@ -26,6 +26,8 @@ function taskVerification() {
 }
 
 function adicionarTask() {
+    const taskTittle = document.querySelector("#taskTittle");
+    const taskDescription = document.querySelector("#taskDescription");
     
 }
 
