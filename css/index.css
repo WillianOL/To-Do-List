@@ -185,6 +185,19 @@ body{
     bottom: 50px;
 }
 
+.erroMensage::before{
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 0;
+    border: 17px solid;
+    border-color: var(--cor3) transparent transparent;
+    border-radius: 0px 0px 100px 100px;
+    top: -32px;
+    left: 50px;
+    transform: rotate(180deg);
+}
+
 .erroMensage p{
     margin: 0px;
 }
