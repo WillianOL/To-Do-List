@@ -23,6 +23,8 @@ body{
 }
 
 .conteiner{
+    display: flex;
+    gap: 30px;
     background-color: #1a1919;
     min-width: 500px;
     padding: 40px;
