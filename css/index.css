@@ -139,8 +139,19 @@ body{
 
 .taskArea{
     overflow-y: scroll;
-    padding-left: 20px;
+    padding: 5px 20px;
     border-left: 1px solid rgba(255, 252, 252, 0.536);
+}
+
+.taskArea::-webkit-scrollbar{
+    background: transparent;
+    width: 5px;
+    border-radius: 20px;
+}
+
+.taskArea::-webkit-scrollbar-thumb {
+    background-color: var(--cor3);
+    border-radius: 20px;
 }
 
 .taskArea h2{
