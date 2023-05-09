@@ -4,7 +4,7 @@ const valueErroMensage = document.querySelector("[data-erroMensage='valueErro']"
 
 const tasksBox = [];
 
-function adicionarTask() {
+function taskVerification() {
     const tittleTask = document.querySelector("#taskTittle").value;
     const containsTask = tasksBox.includes(tittleTask);
     const removeClassValueErro = valueErroMensage.classList.remove("showErroMensage");
@@ -19,12 +19,18 @@ function adicionarTask() {
     } else {
         removeClassValueErro
         removeClassContainsErro
+
         tasksBox.push(tittleTask)
+        adicionarTask();
     }
+}
+
+function adicionarTask() {
+    
 }
 
 function removerTask() {
 
 }
 
-buttonAddTask.addEventListener("click", adicionarTask)
+buttonAddTask.addEventListener("click", taskVerification)
