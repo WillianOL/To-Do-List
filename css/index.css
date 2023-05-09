@@ -24,8 +24,8 @@ body{
 
 .conteiner{
     display: flex;
-    min-height: 450px;
-    gap: 30px;
+    height: 450px;
+    gap: 20px;
     background-color: #1a1919;
     min-width: 500px;
     padding: 40px;
@@ -36,6 +36,7 @@ body{
 
 .taskCreateArea, .taskArea{
     min-width: 380px;
+    position: relative;
 }
 
 .taskCreateArea h1{
@@ -124,15 +125,60 @@ body{
     background-color: rgb(26, 177, 43);
 }
 
+.taskConteiner button:hover{
+    transform: translateY(-2px);
+    background-color: rgb(237, 46, 46);
+}
+
 .taskConteiner{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.taskArea{
+    overflow-y: scroll;
+    padding-left: 20px;
+    border-left: 1px solid rgba(255, 252, 252, 0.536);
+}
+
+.taskArea h2{
+    font-size: 1.3em;
+    margin-bottom: 10px;
 }
 
 .task{
-    background-color: #0c60a9;
-    max-width: 250px;
+    background-color: rgb(229, 229, 229);
+    max-width: 270px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    color: rgb(46, 43, 43);
+}
+
+.task h1{
+    margin-bottom: 10px;
+    color: var(--cor3);
+}
+
+.erroMensage{
+    position: absolute;
+    background-color: var(--cor3);
     padding: 20px;
     border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    bottom: 50px;
+}
+
+.erroMensage p{
+    margin: 0px;
+}
+
+.erroMensage p::before{
+    width: 0px;
+    height: 0px;
 }
