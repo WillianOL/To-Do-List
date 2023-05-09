@@ -8,11 +8,13 @@ const tasksBox = [];
 function adicionarTask() {
     const tittleTask = document.querySelector("#taskTittle").value;
     const containsTask = tasksBox.includes(tittleTask);
+    const addClassContaisErro = containsTaskErro.classList.add("showErroMensage");
+    const addClassValueErro = valueErroMensage.classList.add("showErroMensage");
 
     if(containsTask) {
-        containsTaskErro.classList.add("showErroMensage")
+        addClassContaisErro
     } else if(tittleTask === ""){
-        valueErroMensage.classList.add("showErroMensage")
+        addClassValueErro
     } else {
         valueErroMensage.classList.remove("showErroMensage")
         containsTaskErro.classList.remove("showErroMensage")
