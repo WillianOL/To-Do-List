@@ -108,7 +108,7 @@ body{
     border-bottom: 1px solid var(--cor3);
 }
 
-.addTaskArea button, .taskConteiner button{
+.addTaskArea button, .taskArea ul li button{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -125,12 +125,12 @@ body{
     background-color: rgb(26, 177, 43);
 }
 
-.taskConteiner button:hover{
+.taskArea ul li button:hover{
     transform: translateY(-2px);
     background-color: rgb(237, 46, 46);
 }
 
-.taskConteiner{
+.taskArea ul li{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -159,12 +159,17 @@ body{
     margin-bottom: 10px;
 }
 
+.taskArea ul {
+    list-style: none;
+}
+
 .task{
     background-color: rgb(229, 229, 229);
     width: 270px;
     padding: 20px 30px;
     border-radius: 20px;
     color: rgb(46, 43, 43);
+    margin-bottom: 20px;
 }
 
 .task h1{

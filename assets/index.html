@@ -15,7 +15,7 @@
         <section class="taskCreateArea">
             <h1>To<span>-</span>do list</h1>
             <p>Adicione uma <span>nova anotação</span> a sua lista!</p>
-            <div class="addTaskArea">
+            <form class="addTaskArea">
                 <div class="taskInputs">
                     <input type="text" id="taskTittle" placeholder="Titulo">
                     <input type="text" id="taskDescription" placeholder="Descrição">
@@ -29,12 +29,13 @@
                 <div class="erroMensage jaTemTask" data-erroMensage="taskIsIncluded">
                     <p>Sua lista já possui essa tarefa, tente outra!</p>
                 </div>
-            </div>
+            </form>
             
         </section>
 
         <section class="taskArea">
             <h2>Anotações:</h2>
+            <ul></ul>
         </section>
 
     </main>

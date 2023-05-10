@@ -1,11 +1,12 @@
 const buttonAddTask = document.querySelector("[data-botaoTask='adicionar']");
 const containsTaskErro = document.querySelector("[data-erroMensage='taskIsIncluded']");
 const valueErroMensage = document.querySelector("[data-erroMensage='valueErro']");
-const taskContainer = document.querySelector(".taskArea")
+const taskContainer = document.querySelector(".taskArea ul")
 
 const tasksBox = [];
 
-function taskVerification() {
+function taskValueVerification(event) {
+    event.preventDefault();
     const tittleTask = document.querySelector("#taskTittle").value;
     const containsTask = tasksBox.includes(tittleTask);
     const removeClassValueErro = valueErroMensage.classList.remove("showErroMensage");
@@ -27,23 +28,23 @@ function taskVerification() {
 }
 
 function adicionarTask() {
-    const taskTittle = document.querySelector("#taskTittle");
-    const taskDescription = document.querySelector("#taskDescription");
+    const taskTittle = document.querySelector("#taskTittle").value;
+    const taskDescription = document.querySelector("#taskDescription").value;
 
-    const taskCreate = `
-        <div class="taskConteiner">
-            <div class="task">
-                <h1>${taskTittle.value}</h1>
-                <p>${taskDescription.value}</p>
-            </div>
-                <button class="removeTask" data-botaoTask="remover" title="Remover anotação">-</button>
-            </div>
+    taskContainer.innerHTML += `
+    <li>
+        <div class="task">
+            <h1>${taskTittle}</h1>
+            <p>${taskDescription}</p>
+        </div>
+        <button data-botaoTask="remover">-</button>
+    </li>
     `
-    taskContainer.innerHTML += taskCreate
+
 }   
 
 function removerTask() {
     console.log("FOI");
 }
 
-buttonAddTask.addEventListener("click", taskVerification)
+buttonAddTask.addEventListener("click", taskValueVerification)
