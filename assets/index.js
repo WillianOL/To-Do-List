@@ -37,14 +37,16 @@ function adicionarTask() {
             <h1>${taskTittle}</h1>
             <p>${taskDescription}</p>
         </div>
-        <button data-botaoTask="remover">-</button>
+        <button data-botaoTask="remover" class="remover" title="Remover anotação">-</button>
     </li>
     `
-
 }   
 
-function removerTask() {
-    console.log("FOI");
+function removerTask(event) {
+    if(event.target.classList.contains("remover")){
+        event.target.parentElement.remove();
+    }
 }
 
+taskContainer.addEventListener("click", removerTask)
 buttonAddTask.addEventListener("click", taskValueVerification)
