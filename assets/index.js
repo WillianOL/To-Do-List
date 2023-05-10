@@ -11,14 +11,14 @@ function taskVerification() {
     const removeClassContainsErro = containsTaskErro.classList.remove("showErroMensage");
 
     if(containsTask) {
-        removeClassValueErro
+        removeClassValueErro;
         containsTaskErro.classList.add("showErroMensage");
     } else if(tittleTask === ""){
-        removeClassContainsErro
+        removeClassContainsErro;
         valueErroMensage.classList.add("showErroMensage")
     } else {
-        removeClassValueErro
-        removeClassContainsErro
+        removeClassValueErro;
+        removeClassContainsErro;
 
         tasksBox.push(tittleTask)
         adicionarTask();
@@ -28,7 +28,7 @@ function taskVerification() {
 function adicionarTask() {
     const taskTittle = document.querySelector("#taskTittle");
     const taskDescription = document.querySelector("#taskDescription");
-    
+
 }
 
 function removerTask() {
