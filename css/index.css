@@ -161,7 +161,7 @@ body{
 
 .task{
     background-color: rgb(229, 229, 229);
-    max-width: 270px;
+    width: 270px;
     padding: 20px 30px;
     border-radius: 20px;
     color: rgb(46, 43, 43);
