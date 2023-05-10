@@ -7,23 +7,25 @@ const tasksBox = [];
 
 function taskValueVerification(event) {
     event.preventDefault();
-    const tittleTask = document.querySelector("#taskTittle").value;
-    const containsTask = tasksBox.includes(tittleTask);
+    const tittleTask = document.querySelector("#taskTittle");
+    const tittleValue = tittleTask.value
+    const containsTask = tasksBox.includes(tittleValue);
     const removeClassValueErro = valueErroMensage.classList.remove("showErroMensage");
     const removeClassContainsErro = containsTaskErro.classList.remove("showErroMensage");
 
     if(containsTask) {
         removeClassValueErro;
         containsTaskErro.classList.add("showErroMensage");
-    } else if(tittleTask === ""){
+    } else if(tittleValue === ""){
         removeClassContainsErro;
         valueErroMensage.classList.add("showErroMensage")
     } else {
         removeClassValueErro;
         removeClassContainsErro;
 
-        tasksBox.push(tittleTask)
+        tasksBox.push(tittleValue)  
         adicionarTask();
+        tittleTask.value = ""
     }
 }
 
