@@ -25,7 +25,6 @@ function taskValueVerification(event) {
 
         removeClassValueErro;
         removeClassContainsErro;
-
     }
 }
 
