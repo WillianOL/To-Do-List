@@ -8,24 +8,24 @@ const tasksBox = [];
 function taskValueVerification(event) {
     event.preventDefault();
     const tittleTask = document.querySelector("#taskTittle");
-    const tittleValue = tittleTask.value
-    const containsTask = tasksBox.includes(tittleValue);
+    const containsTask = tasksBox.includes(tittleTask.value);
     const removeClassValueErro = valueErroMensage.classList.remove("showErroMensage");
     const removeClassContainsErro = containsTaskErro.classList.remove("showErroMensage");
 
     if(containsTask) {
         removeClassValueErro;
         containsTaskErro.classList.add("showErroMensage");
-    } else if(tittleValue === ""){
+    } else if(tittleTask.value === ""){
         removeClassContainsErro;
         valueErroMensage.classList.add("showErroMensage")
     } else {
+        tasksBox.push(tittleTask.value)  
+        adicionarTask();
+        tittleTask.value = ""
+
         removeClassValueErro;
         removeClassContainsErro;
 
-        tasksBox.push(tittleValue)  
-        adicionarTask();
-        tittleTask.value = ""
     }
 }
 
