@@ -40,3 +40,47 @@ body{
     min-width: 380px;
     position: relative;
 }
+
+/* area de criação de anotações(tasks) */
+.taskCreateArea h1{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.taskCreateArea h1::before{
+    position: absolute;
+    background-color: var(--corDestaque);
+    width: 20px;
+    height: 8px;
+    content: " ";
+    border-radius: 2px 10px;
+    left: -25px;
+    top: 15px;
+}
+
+.taskCreateArea h1 span{
+    color: var(--corDestaque);
+}
+
+.taskCreateArea p{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.taskCreateArea p span{
+    color: var(--corDestaque);
+}
+
+.taskCreateArea p::before{
+    position: absolute;
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--corDestaque);
+    left: -15px;
+    top: 6.5px;
+}
+
