@@ -36,7 +36,8 @@ body{
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.433);
 }
 
-.taskCreateArea, .taskArea {
+.taskCreateArea,
+.taskArea {
     min-width: 380px;
     position: relative;
 }
@@ -112,7 +113,8 @@ body{
 }
 
 /* botões de adicioar e remover tasks */
-.taskAddArea button, .taskArea ul li button{
+.taskAddArea button,
+.taskArea ul li button{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -122,4 +124,65 @@ body{
     font-size: 1.3rem;
     cursor: pointer;
     transition: all .3s ease;
+}
+
+.taskAddArea button:hover,
+.taskArea ul li button:hover{
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 5px black;
+}
+
+.taskAddArea button:hover{
+    background-color: rgb(26, 177, 43);
+}
+
+.taskArea ul li button:hover{
+    background-color: rgb(237, 46, 46);
+}
+
+/* section onde ficam as anotações adiciodas */
+.taskArea{
+    overflow-y: scroll;
+    padding: 5px 20px;
+    border-left: 1px solid rgba(255, 252, 252, 0.536);
+}
+
+.taskArea h2{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.taskArea::-webkit-scrollbar{
+    background: transparent;
+    width: 5px;
+}
+
+.taskArea::-webkit-scrollbar-thumb{
+    background-color: var(--corDestaque);
+    border-radius: 20px;
+}
+
+.taskArea ul{
+    list-style: none;
+}
+
+.taskArea ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.task{
+    background-color: rgb(230, 229, 229);
+    width: 270px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    border-radius: 20px;
+    color: rgb(46, 43, 43);
+}
+
+.task h1{
+    margin-bottom: 10px;
+    color: var(--corDestaque);
 }

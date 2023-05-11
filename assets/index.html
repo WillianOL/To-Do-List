@@ -18,16 +18,24 @@
 
             <form class="taskAddArea">
                 <div class="taskInputs">
-                    <input type="text" id="taskTittle" placeholder="Tittle">
-                    <input type="text" id="taskDescription" placeholder="Description">
+                    <input type="text" id="taskTittle" placeholder="Titulo">
+                    <input type="text" id="taskDescription" placeholder="Descrição">
                 </div>
-                <button class="buttonAddTask" data-buttons="addTask">+</button>
+                <button class="buttonAddTask" data-buttons="addTask" title="Adicionar Anotação">+</button>
             </form>
         </section>
 
         <section class="taskArea">
             <h2>Anotações:</h2>
-            <ul></ul>
+            <ul>
+                <li>
+                    <div class="task">
+                        <h1>${taskTittle}</h1>
+                        <p>${taskDescription}</p>
+                    </div>
+                    <button data-botaoTask="remover" class="remover" title="Remover anotação">-</button>
+                </li>
+            </ul>
         </section>
 
     </main>
