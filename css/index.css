@@ -74,7 +74,7 @@ body{
     color: var(--corDestaque);
 }
 
-.taskCreateArea p::before{
+.taskCreateArea p:nth-child(2)::before{
     position: absolute;
     content: " ";
     width: 10px;
