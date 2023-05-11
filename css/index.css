@@ -1,5 +1,6 @@
 :root {
     --corBackground: #0d1b2c;
+    --corTaskConteiner: #1a1919;
     --corLetras: #dcdada;
     --corDestaque: #0e7cdc;
     --fontPrincipal: "Poppins", sans-serif;
@@ -21,8 +22,21 @@ body{
     justify-content: center;
 }
 
-/* to-do list conteiner */
+/* to-do list conteiner - conteiner anotações width */
 .conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: var(--corTaskConteiner);
+    height: 450px;
+    padding: 40px;
+    border-radius: 10px;
     min-width: 500px;
     color: var(--corLetras);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.433);
+}
+
+.taskCreateArea, .taskArea {
+    min-width: 380px;
+    position: relative;
 }
