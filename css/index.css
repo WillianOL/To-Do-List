@@ -41,7 +41,7 @@ body{
     position: relative;
 }
 
-/* area de criação de anotações(tasks) */
+/* section de criação de anotações(tasks) */
 .taskCreateArea h1{
     font-size: 1.8rem;
     margin-bottom: 10px;
@@ -84,3 +84,29 @@ body{
     top: 6.5px;
 }
 
+.taskAddArea{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.taskInputs{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--corDestaque);
+    border-radius: 20px 10px;
+    overflow: hidden;
+}
+
+.taskInputs input{
+    padding: 15px;
+    min-width: 290px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.916);
+}
+
+.taskInputs input:first-child{
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--corDestaque);
+}
