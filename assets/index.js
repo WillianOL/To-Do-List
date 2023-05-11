@@ -3,12 +3,12 @@ const containsTaskErro = document.querySelector("[data-erroMensage='taskIsInclud
 const valueErroMensage = document.querySelector("[data-erroMensage='valueErro']");
 const taskContainer = document.querySelector(".taskArea ul")
 
-const tasksBox = [];
+const taskTittlesNames = [];
 
 function taskValueVerification(event) {
     event.preventDefault();
     const tittleTask = document.querySelector("#taskTittle");
-    const containsTask = tasksBox.includes(tittleTask.value);
+    const containsTask = taskTittlesNames.includes(tittleTask.value);
     const removeClassValueErro = valueErroMensage.classList.remove("showErroMensage");
     const removeClassContainsErro = containsTaskErro.classList.remove("showErroMensage");
 
@@ -19,7 +19,7 @@ function taskValueVerification(event) {
         removeClassContainsErro;
         valueErroMensage.classList.add("showErroMensage")
     } else {
-        tasksBox.push(tittleTask.value)  
+        taskTittlesNames.push(tittleTask.value)  
         adicionarTask();
         tittleTask.value = ""
 
