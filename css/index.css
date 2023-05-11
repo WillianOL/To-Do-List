@@ -1,0 +1,23 @@
+:root {
+    --cor1: #011640;
+    --cor2: #dcdada;
+    --cor3: #0e7cdc;
+    --cor4: #2f09a3;
+    --fontPrincipal: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontPrincipal);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #0d1b2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
