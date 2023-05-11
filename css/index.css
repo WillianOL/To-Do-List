@@ -1,8 +1,7 @@
 :root {
-    --cor1: #011640;
-    --cor2: #dcdada;
-    --cor3: #0e7cdc;
-    --cor4: #2f09a3;
+    --corBackground: #0d1b2c;
+    --corLetras: #dcdada;
+    --corDestaque: #0e7cdc;
     --fontPrincipal: "Poppins", sans-serif;
 }
 
@@ -16,8 +15,14 @@
 body{
     width: 100vw;
     height: 100vh;
-    background: #0d1b2c;
+    background: var(--corBackground);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* to-do list conteiner */
+.conteiner{
+    min-width: 500px;
+    color: var(--corLetras);
 }
