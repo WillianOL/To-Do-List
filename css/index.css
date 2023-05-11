@@ -168,6 +168,7 @@ body{
 }
 
 .taskArea ul{
+    padding: 0px 0px 0px 20px;
     list-style: none;
 }
 
@@ -176,6 +177,18 @@ body{
     align-items: center;
     justify-content: space-around;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.taskArea ul li::before{
+    position: absolute;
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: var(--corDestaque);
+    border-radius: 50%;
+    left: -17px;
+    top: 40px;
 }
 
 .task{
