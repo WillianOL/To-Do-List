@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do-Listener</title>
+    <title>To-Do List</title>
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -13,24 +13,16 @@
     <main class="conteiner">
 
         <section class="taskCreateArea">
-            <h1>To<span>-</span>do list</h1>
+            <h1>To<span>-</span>Do list</h1>
             <p>Adicione uma <span>nova anotação</span> a sua lista!</p>
-            <form class="addTaskArea">
+
+            <form class="taskAddArea">
                 <div class="taskInputs">
-                    <input type="text" id="taskTittle" placeholder="Titulo">
-                    <input type="text" id="taskDescription" placeholder="Descrição">
+                    <input type="text" id="taskTittle" placeholder="Tittle">
+                    <input type="text" id="taskDescription" placeholder="Description">
                 </div>
-                <button class="btnAddTask" data-botaoTask="adicionar" title="Adicionar anotação">+</button>
-
-                <div class="erroMensage" data-erroMensage="valueErro">
-                    <p>Adicione pelo menos o titulo para criar a tarefa</p>
-                </div>
-
-                <div class="erroMensage jaTemTask" data-erroMensage="taskIsIncluded">
-                    <p>Sua lista já possui essa tarefa, tente outra!</p>
-                </div>
+                <button class="buttonAddTask" data-buttons="addTask">+</button>
             </form>
-            
         </section>
 
         <section class="taskArea">
@@ -39,6 +31,7 @@
         </section>
 
     </main>
+
 
     <script src="index.js"></script>
 </body>
