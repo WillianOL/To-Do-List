@@ -2,12 +2,12 @@ const buttonAddTask = document.querySelector("[data-botaoTask='adicionar']");
 const containsTaskErro = document.querySelector("[data-erroMensage='taskIsIncluded']");
 const valueErroMensage = document.querySelector("[data-erroMensage='valueErro']");
 const taskContainer = document.querySelector(".taskArea ul")
+const tittleTask = document.querySelector("#taskTittle");
 
 const taskTittlesNames = [];
 
 function taskValueVerification(event) {
     event.preventDefault();
-    const tittleTask = document.querySelector("#taskTittle");
     const containsTask = taskTittlesNames.includes(tittleTask.value);
     const removeClassValueErro = valueErroMensage.classList.remove("showErroMensage");
     const removeClassContainsErro = containsTaskErro.classList.remove("showErroMensage");
@@ -44,8 +44,10 @@ function adicionarTask() {
 }   
 
 function removerTask(event) {
-    if(event.target.classList.contains("remover")){
+    const taskButtonRemove = event.target.classList.contains("remover")
+    if(taskButtonRemove){
         event.target.parentElement.remove();
+        taskTittlesNames.shift(tittleTask.value)
     }
 }
 
