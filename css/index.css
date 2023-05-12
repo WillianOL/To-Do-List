@@ -204,3 +204,34 @@ body{
     margin-bottom: 10px;
     color: var(--corDestaque);
 }
+
+/* Spans com as mensagens de erro */
+.erroMensage{
+    position: absolute;
+    background-color: var(--corDestaque);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    bottom: 102px;
+}
+
+.erroMensage::before{
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 0;
+    border: 17px solid;
+    border-color: var(--corDestaque) transparent transparent;
+    border-radius: 0px 0px 100px 100px;
+    top: -32px;
+    left: 50px;
+    transform: rotate(180deg);
+}
+
+.erroMensage p{
+    margin-bottom: 0px;
+}
