@@ -217,6 +217,11 @@ body{
     justify-content: center;
     text-align: center;
     bottom: 102px;
+    animation: erroMensageAnimation .4s ease;
+}
+
+.erroMensage:last-child{
+    bottom: 125px;
 }
 
 .erroMensage::before{
@@ -234,4 +239,11 @@ body{
 
 .erroMensage p{
     margin-bottom: 0px;
+}
+
+@keyframes erroMensageAnimation {
+    from{
+        opacity: 0;
+        transform: scale(.2); 
+    }
 }
