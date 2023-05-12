@@ -212,7 +212,7 @@ body{
     padding: 20px;
     border-radius: 20px;
     color: white;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -246,4 +246,9 @@ body{
         opacity: 0;
         transform: scale(.2); 
     }
+}
+
+/* Mostrar mensagens de erro(JavaScript) */
+.showErroMensage{
+    display: flex;
 }
