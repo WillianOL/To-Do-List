@@ -1,20 +1,25 @@
-const buttonAddTask = document.querySelector("[data-buttons='addTask']");
-const titleTask = document.querySelector("#taskTittle");
-const titleErrorMessage = document.querySelector("[data-erroMensage='erroTitle']");
-const IncludesErrorMensage = document.querySelector("[data-erroMensage='erroTaskIncludes']")
+const botaoAdicionarTarefa = document.querySelector("[data-buttons='addTask']");
+const tituloTarefa = document.querySelector("#taskTittle");
+const mensagemErroTitulo = document.querySelector("[data-erroMensage='erroTitle']");
+const mensagemTemTarefa = document.querySelector("[data-erroMensage='erroTaskIncludes']")
 
-const taskTitles = [];
+const arrayTarefas = [];
 
-function inputValueVerification(event) {
+function verificarValorDoInput(event) {
     event.preventDefault();
-    const containsTask = taskTitles.includes(titleTask.value);
-    const removesValueErrorClass = titleErrorMessage.classList.remove("showErroMensage");
+    const contemTarefa = arrayTarefas.includes(tituloTarefa.value);
+    const removeClasseMensagemTitulo = mensagemErroTitulo.classList.remove("showErrorMensage");
+    const removeClasseMensagemInclui = mensagemTemTarefa.classList.remove("showErrorMensage");
 
-    if (titleTask.value == "") {
-        titleErrorMessage.classList.add("showErroMensage")
-    } else if(containsTask) {
-
+    if (tituloTarefa.value == "") {
+        removeClasseMensagemInclui;
+        mensagemErroTitulo.classList.add("showErrorMensage");
+    } else if(contemTarefa) {
+        removeClasseMensagemTitulo;
+        mensagemTemTarefa.classList.add("showErrorMensage");
+    } else {
+        arrayTarefas.push(tituloTarefa.value);
     }
 }
 
-buttonAddTask.addEventListener("click", inputValueVerification);
+botaoAdicionarTarefa.addEventListener("click", verificarValorDoInput);

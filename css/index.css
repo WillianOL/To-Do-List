@@ -249,6 +249,6 @@ body{
 }
 
 /* Mostrar mensagens de erro(JavaScript) */
-.showErroMensage{
+.showErrorMensage{
     display: flex;
 }
