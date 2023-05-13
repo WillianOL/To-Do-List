@@ -1,6 +1,6 @@
 const botaoAdicionarTarefa = document.querySelector("[data-buttons='addTask']");
 const tituloTarefa = document.querySelector("#taskTittle");
-const descricaoTarefa = document.querySelector("#taskDescription")
+const tarefaConteiner = document.querySelector(".taskArea ul");
 const mensagemErroTitulo = document.querySelector("[data-erroMensage='erroTitle']");
 const mensagemTemTarefa = document.querySelector("[data-erroMensage='erroTaskIncludes']")
 
@@ -28,8 +28,8 @@ botaoAdicionarTarefa.addEventListener("click", verificarValorDoInput);
 
 function adicionarTarefa() {
     const tituloValor = tituloTarefa.value;
-    const descricaoValor = descricaoTarefa.value;
-    const tarefaConteiner = document.querySelector(".taskArea ul");
+    const descricaoValor = document.querySelector("#taskDescription").value;
+    
 
     tarefaConteiner.innerHTML += `
     <li>
@@ -37,8 +37,19 @@ function adicionarTarefa() {
             <h1>${tituloValor}</h1>
             <p>${descricaoValor}</p>
         </div>
-        <button data-botaoTask="remover" class="remover" title="Remover anotação">-</button>
+        <button data-buttons="removeTask" class="remover" title="Remover anotação">-</button>
     </li>
     `
-
 }
+
+
+const botaoRemoverTarefa = document.querySelector("[data-buttons='removeTask']")
+
+function removerTarefa(event) {
+    if(event.target.classList.contains("remover")){
+        event.target.parentElement.remove();
+        arrayTarefas.shift(tituloTarefa.value);
+    }
+}
+
+tarefaConteiner.addEventListener("click", removerTarefa);
