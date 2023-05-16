@@ -54,20 +54,26 @@
 <div>
 	<p>Primeiramente, foram definidas cinco constantes importantes para a criação da aplicação. São elas:</p>
  	<ul>
-    	<li>botaoAdicionarTarefa - Botão que vai adicionar as tarefas</li>
-		<li>tituloTarefa - Input onde vai ser digitado o titulo da tarefa</li>
-		<li>mensagemErroTitulo - Mensagem de alerta caso não seja digitado o titulo no input</li>
-		<li>mensagemErroTemTarefa - Mensagem de alerta caso a tarefa já exista</li>
-		<li>arrayTarefas - Array onde será armazenado os titulos para a validação</li>
+		<li><strong>botaoAdicionarTarefa</strong> - Botão que vai adicionar as tarefas;</li>
+		<li><strong>tituloTarefa</strong> - Input onde vai ser digitado o titulo da tarefa;</li>
+		<li><strong>mensagemErroTitulo</strong> - Mensagem de alerta caso não seja digitado o titulo no input;</li>
+		<li><strong>mensagemErroTemTarefa</strong> - Mensagem de alerta caso a tarefa já exista;</li>
+		<li><strong>arrayTarefas</strong> - Array onde será armazenado os titulos para a validação;</li>
  	<ul>
 </div>
 
+<div align="center">
+	<img align="center" src="https://github.com/WillianOL/To-Do-List/assets/112639055/b941c10d-2fb3-4687-b358-21c8d86f6546" width="700px">
+</div>
 
+&nbsp;
+&nbsp;
 
-
-
-
-
+### Validação das tarefas
+		
+<div>
+	<p></p>
+<div>
 
 
 
