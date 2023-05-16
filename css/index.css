@@ -286,9 +286,9 @@ body{
 
 @media(max-width: 440px){
     .conteiner{
-        width: 400px;
+        width: 350px;
         gap: 80px;
-        height: 620px;
+        height: 670px;
     }
 
     .taskCreateArea{
@@ -307,15 +307,24 @@ body{
     }
 
     .erroMensage{
-        bottom: -70px;
+        bottom: -55px;
         left: 5px;
     }
 
     .erroMensage:last-child{
-        bottom: -45px;
+        bottom: -60px;
+    }
+
+    .taskCreateArea,
+    .taskArea {
+        min-width: 330px;
     }
 
     .taskArea ul{
         height: 200px;
+    }
+
+    .task{
+        width: 220px;
     }
 }
