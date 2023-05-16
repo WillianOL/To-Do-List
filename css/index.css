@@ -252,3 +252,34 @@ body{
 .showErrorMensage{
     display: flex;
 }
+
+/* mediaQueries */
+@media(max-width: 860px){
+    .conteiner{
+        min-width: 200px;
+        max-width: 500px;
+        height: 650px;
+        padding: 30px;
+        justify-content: center;
+        gap: 120px;
+    }
+
+    .erroMensage{
+        bottom: -105px;
+    }
+
+    .erroMensage:last-child{
+        bottom: -80px;
+    }
+
+    .taskArea{
+        border: none;
+        border-top: 1px solid rgba(255, 252, 252, 0.536);
+        padding: 5px;
+    }
+    
+    .taskArea ul{
+        height: 230px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.433);
+    }
+}
