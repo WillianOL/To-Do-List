@@ -72,11 +72,39 @@
 ### Validação das tarefas
 		
 <div>
-	<p></p>
+	<p>Para fazer a validação do valor digitado no input, mais expecificamente baseado no valor do titulo, no <strong>botão de adicionar tarefa</strong> foi adicionado um <strong>evento de click com a função "validacaoDasTarefas"</strong> através do <strong>addEventListener()</strong>.</p>
 <div>
 
+<div align="center">
+	<img align="center" src="https://github.com/WillianOL/To-Do-List/assets/112639055/7664a19b-8991-4908-b587-6476edd5cc79" width="700px">
+</div>
 
+&nbsp;
+	
+<div>
+	<p>Na função, foi passado o parâmetro "event" que foi usado para impedir que o formulário seja enviado, usando o método preventDefault().</p>
+<div>
 
+<div align="center">
+	<img align="center" src="https://github.com/WillianOL/To-Do-List/assets/112639055/e46a4855-69d0-4abb-abf9-4e79083748d5" width="700px">
+</div>
 
+&nbsp;
 
+<div>
+	<p>Ainda na função, foram criadas três constantes para fazer a validação utilizando uma estrutura condicional (if e else). São elas:</p>
+	<ul>
+		<li>contemTarefa - Verifica se na arrayTarefas já possui uma tarefa criada com o mesmo titulo, retornando true ou false.</li>
+		<li>removeClasseMensagemTitulo - Remove a classe responsável por mostrar a mensagem de erro, caso nada seja passado no input(showErrorMensage)</li>
+		<li>removeClasseMensagemInclui - Também remove a classe da mensagem de erro, caso a tarefa já exista na lista.</li>
+	</ul>
+	<p>Todas elas criadas para deixar o código mais legível e organizado, usando clean code.</p>
+<div>
+	
+<div align="center">
+	<img align="center" src="https://github.com/WillianOL/To-Do-List/assets/112639055/0c91f4a4-9c5f-4ceb-9882-a5002242be16" width="700px">
+</div>
 
+	
+	
+	
