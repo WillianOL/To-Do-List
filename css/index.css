@@ -191,6 +191,10 @@ body{
     top: 40px;
 }
 
+.taskArea ul li:last-child{
+    animation: taskAnimate .4s ease;
+}
+
 .task{
     background-color: rgb(230, 229, 229);
     width: 270px;
@@ -203,6 +207,18 @@ body{
 .task h1{
     margin-bottom: 10px;
     color: var(--corDestaque);
+}
+
+@keyframes taskAnimate {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 /* Spans com as mensagens de erro */

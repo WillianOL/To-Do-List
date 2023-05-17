@@ -6,7 +6,7 @@ const mensagemTemTarefa = document.querySelector("[data-erroMensage='erroTaskInc
 
 const arrayTarefas = [];
 
-function verificarValorDoInput(event) {
+function validacaoDasTarefas(event) {
     event.preventDefault();
     const contemTarefa = arrayTarefas.includes(tituloTarefa.value);
     const removeClasseMensagemTitulo = mensagemErroTitulo.classList.remove("showErrorMensage");
@@ -24,13 +24,12 @@ function verificarValorDoInput(event) {
         tituloTarefa.value = ""
     }
 }
-botaoAdicionarTarefa.addEventListener("click", verificarValorDoInput);
+botaoAdicionarTarefa.addEventListener("click", validacaoDasTarefas);
 
 function adicionarTarefa() {
     const tituloValor = tituloTarefa.value;
     const descricaoValor = document.querySelector("#taskDescription").value;
     
-
     tarefaConteiner.innerHTML += `
     <li>
         <div class="task">
