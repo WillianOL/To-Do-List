@@ -52,10 +52,11 @@
 ### Vareáveis importantes
 
 <div>
-	<p>Primeiramente, foram definidas cinco constantes importantes para a criação da aplicação. São elas:</p>
+	<p>Primeiramente, foram definidas 6 constantes importantes para a criação da aplicação. São elas:</p>
  	<ul>
 		<li><strong>botaoAdicionarTarefa</strong> - Botão que vai adicionar as tarefas;</li>
 		<li><strong>tituloTarefa</strong> - Input onde vai ser digitado o titulo da tarefa;</li>
+		<li><strong>tarefaConteiner</strong> - ul onde vão ser colocadas as tarefas;</li>
 		<li><strong>mensagemErroTitulo</strong> - Mensagem de alerta caso não seja digitado o titulo no input;</li>
 		<li><strong>mensagemErroTemTarefa</strong> - Mensagem de alerta caso a tarefa já exista;</li>
 		<li><strong>arrayTarefas</strong> - Array onde será armazenado os titulos para a validação;</li>
@@ -94,9 +95,9 @@
 <div>
 	<p>Ainda na função, foram criadas três constantes para fazer a validação utilizando uma estrutura condicional (if e else). São elas:</p>
 	<ul>
-		<li>contemTarefa - Verifica se na arrayTarefas já possui uma tarefa criada com o mesmo titulo, retornando true ou false.</li>
-		<li>removeClasseMensagemTitulo - Remove a classe responsável por mostrar a mensagem de erro, caso nada seja passado no input(showErrorMensage)</li>
-		<li>removeClasseMensagemInclui - Também remove a classe da mensagem de erro, caso a tarefa já exista na lista.</li>
+		<li><strong>contemTarefa</strong> - Verifica se na arrayTarefas já possui uma tarefa criada com o mesmo titulo, retornando true ou false;</li>
+		<li><strong>removeClasseMensagemTitulo</strong> - Remove a classe responsável por mostrar a mensagem de erro, caso nada seja passado no input(showErrorMensage);</li>
+		<li><strong>removeClasseMensagemInclui</strong> - Também remove a classe da mensagem de erro, caso a tarefa já exista na lista;</li>
 	</ul>
 	<p>Todas elas criadas para deixar o código mais legível e organizado, usando clean code.</p>
 <div>
@@ -104,7 +105,42 @@
 <div align="center">
 	<img align="center" src="https://github.com/WillianOL/To-Do-List/assets/112639055/0c91f4a4-9c5f-4ceb-9882-a5002242be16" width="700px">
 </div>
-
 	
+&nbsp;
+
+<div>
+	<p>Depois, é criada uma estrutura condicional (if e else) para validar. No primeiro if é vefificado se o titulo da tarefa passado no input é igual a ""(string vazia), ou seja, se nada for digitado no input vai executar. Adicionando a classe na "mensagemErroTitulo" para mostrar a mensagem de alerta, e removendo a classe da "mensagemTemTarefa".</p>
+	<p>No "else if" verificando se a tarefa já existe na lista através da constante contemTarefa, caso seja true, vai adicionar a classe na "mensagemTemTarefa" para mostrar a mensagem de alerta, e remove a classe da "mensagemErroTitulo".</p>
+	<p>Por fim, no else vai adicionar o titulo da tarefa na arrayTarefas, executar a função para adicionar a tarefa e limpar o input de titulo.</p>
+<div>
+
+<div align="center">
+	<img align="center" src="https://github.com/WillianOL/To-Do-List/assets/112639055/b6bc2697-07d7-4ef0-8bba-28344644e0d0" width="700px">
+</div>
+	
+&nbsp;
+&nbsp;
+	
+### Função adicionar tarefa
+
+<div>
+	<p>Para adicionar as tarefas, foi criada uma a função "adicionarTarefa()". Nela, foram definidas duas contantes, "tituloValor" que armazena o titulo da tarefa e "descricaoValor" que armazena a descrição da darefa.</p>
+<div>
+	
+<div align="center">
+	<img align="center" src="https://github.com/WillianOL/To-Do-List/assets/112639055/567bc5e4-7eba-4cb5-98e7-a85deb8a215d" width="700px">
+</div>
+	
+&nbsp;
+
+<div>
+	<p>Para a construção da tarefa, no "tarefaConteiner" foi utilizado um innerHTML com uma template string, onde possui o titulo e a descrição da tarefa, além do botão de remover a tarefa.</p>
+<div>
+	
+<div align="center">
+	<img align="center" src="https://github.com/WillianOL/To-Do-List/assets/112639055/d0eea5ef-5a35-4f43-9ab9-e4f82c28f456" width="700px">
+</div>
+
+### Função remover Tarefa
 	
 	
