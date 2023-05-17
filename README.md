@@ -139,8 +139,38 @@
 	
 <div align="center">
 	<img align="center" src="https://github.com/WillianOL/To-Do-List/assets/112639055/d0eea5ef-5a35-4f43-9ab9-e4f82c28f456" width="700px">
+	<img align="center" src="https://github.com/WillianOL/To-Do-List/assets/112639055/e3a76f4f-9679-4ca1-b3e8-de74ee5a0bf3" width="550px">
 </div>
 
 ### Função remover Tarefa
+	
+<div>
+	<p>Para fazer a remoção da tarefa clicada, primeiro, no "tarefaConteiner" onde fica todas as tarefas criadas é adicionado uma função "removerTarefa" com evento de click, atravéz do addEventListener.</p>
+<div>
+
+<div align="center">
+	<img align="center" src="https://github.com/WillianOL/To-Do-List/assets/112639055/1ccb342e-1c7e-49c1-9c1c-6766e11641ca" width="700px">
+</div>	
+
+&nbsp;
+
+<div>
+	<p>Na função, é passado o parâmetro "event". Logo após, é criado uma estrutura condicional que tem como condição o seguinte: se o event.target(item clicado em relação ao conteiner) tiver a classe "remover"(que no caso é o botão) através do classList.contains, executa o código.</p>
+	<p>Dentro do escopo do if, é feita a remoção da tarefa através do parentElement.remove(), removendo o elemento pai do botão, ou seja, a li(tarefa). Também removendo o primeiro item da lista usando o ".shift".</p>
+<div>
+	
+<div align="center">
+	<img align="center" src="https://github.com/WillianOL/To-Do-List/assets/112639055/42c0accf-fae8-487b-95d9-7c05aa4cd72a" width="700px">
+</div>	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
